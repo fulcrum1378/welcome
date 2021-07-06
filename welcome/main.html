@@ -10,11 +10,9 @@
   </blockquote>
 
   <nav id="social">
-    <a tal:repeat="s social" class="btn btn-primary" role="button" target="_blank"
-        style="background-color: ${s.colour};"
-        href="${s.link}"
+    <a tal:repeat="s social" href="${s.link}" target="_blank"
         data-bs-toggle="tooltip" data-bs-placement="top" title="${s.title}">
-      <object data="${root}img/instagram.svg" type="image/svg+xml"></object>
+      <object data="${root}img/${s.icon}.svg" type="image/svg+xml"></object>
     </a>
   </nav>
 

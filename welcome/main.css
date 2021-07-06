@@ -7,6 +7,7 @@
     --CT: rgb(250, 250, 250); /*tertiary*/
     --CTV: rgba(250, 250, 250, 0.8);
 
+    --socialSize: 33px;
     --columnWidth: 25%;
     --gutter: 10px;
 }
@@ -41,9 +42,18 @@ blockquote.mahdi {
 #social {
     margin: 30px 0;
 }
-#social object {
-    width: 25px;
-    height: 25px;
+#social a {
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: all 0.2s;
+}
+#social a:hover {
+    transform: scale(1.1, 1.1);
+}
+#social a object {
+    width: var(--socialSize);
+    height: var(--socialSize);
 }
 .grid-item {
     width: calc(var(--columnWidth) - var(--gutter));
