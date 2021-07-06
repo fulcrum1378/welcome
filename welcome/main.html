@@ -10,10 +10,13 @@
   </blockquote>
 
   <nav id="social">
-    <a tal:repeat="s social" href="${s.link}" target="_blank"
-        data-bs-toggle="tooltip" data-bs-placement="top" title="${s.title}">
-      <object data="${root}img/${s.icon}.svg" type="image/svg+xml"></object>
-    </a>
+    <span tal:repeat="s social" class="social"
+          data-bs-toggle="tooltip" data-bs-placement="top" title="${s.title}">
+      <a href="${s.link}" target="_blank">
+        <!--<object data="${root}img/${s.icon}.svg" type="image/svg+xml"></object>-->
+        <img src="${root}img/${s.icon}.svg">
+      </a>
+    </span>
   </nav>
 
   <div class="grid text-center">
@@ -26,8 +29,8 @@
         <span></span>
         <span></span>
         <img class="icon" src="${root}img/${p.id}_round.png">
-        <p class="projName" tal:content="p.name" />
-        <p class="projDesc" tal:content="p.desc" />
+        <p class="projName" tal:content="p.name"/>
+        <p class="projDesc" tal:content="p.desc"/>
       </a>
     </div>
     <!-- Or simply put $ {p.name} inside <p></p>-->

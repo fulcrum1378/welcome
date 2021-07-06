@@ -42,16 +42,18 @@ blockquote.mahdi {
 #social {
     margin: 30px 0;
 }
-#social a {
-    text-decoration: none;
-    cursor: pointer;
+.social {
     margin: 0 5px;
+    cursor: pointer;
     transition: all 0.2s;
 }
-#social a:hover {
+.social:hover {
     transform: scale(1.1, 1.1);
 }
-#social a object {
+.social a {
+    text-decoration: none;
+}
+.social a img {
     width: var(--socialSize);
     height: var(--socialSize);
 }
@@ -75,13 +77,13 @@ img.icon {
     color: var(--CT);
 }
 p.projName {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
-    margin-top: 15px;
+    margin-top: 16px;
 }
 p.projDesc {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 0;
 }
 
@@ -99,19 +101,6 @@ p.projDesc {
         --columnWidth: 50%;
         --gutter: 6px;
     }
-    img.icon {
-        width: 67px;
-        height: 67px;
-    }
-    p.projName {
-        font-size: 15px;
-        letter-spacing: 0.5px;
-        margin-top: 10px;
-    }
-    p.projDesc {
-        margin-top: 3px;
-        font-size: 13px;
-    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -123,19 +112,6 @@ p.projDesc {
     .grid-item {
         width: calc(var(--columnWidth) - (var(--pageHPadding) + var(--gutter) + var(--gutter)));
         margin: 0 var(--gutter) var(--gutter) var(--gutter);
-    }
-    img.icon {
-        width: 50px;
-        height: 50px;
-    }
-    p.projName {
-        font-size: 14px;
-        letter-spacing: 0;
-        margin-top: 5px;
-    }
-    p.projDesc {
-        margin-top: 1px;
-        font-size: 12px;
     }
 }
 
