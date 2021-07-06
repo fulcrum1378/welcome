@@ -1,0 +1,37 @@
+<main class="container text-center">
+  <img src="${root}img/mahdi.jpg" class="mahdi">
+  <p class="mahdi">Mahdi Parastesh</p>
+  <blockquote class="mahdi">
+    I have 6 years of experience in <b>Full-Stack software engineering</b>.<br><br>
+    The programming languages I'm skilled in are JavaScript, PHP, Java, SQL, Kotlin, Dart, Python and Prolog.
+    I can develop Android apps using mere Java/Kotlin, or also for iOS using Flutter or React Native.
+    I also know Node.js, TensorFlow, PyTorch, MySQL and PostgreSQL.<br>
+    I practice Machine Learning and I'm also an expert in Linux.
+  </blockquote>
+
+  <nav id="social">
+    <a tal:repeat="s social" class="btn btn-primary" role="button" target="_blank"
+        style="background-color: ${s.colour};"
+        href="${s.link}"
+        data-bs-toggle="tooltip" data-bs-placement="top" title="${s.title}">
+      <object data="${root}img/instagram.svg" type="image/svg+xml"></object>
+    </a>
+  </nav>
+
+  <div class="grid text-center">
+    <!-- Animated button must be put in an inner element;
+         so that it won't drop out of its bounds! -->
+    <div class="grid-item" tal:repeat="p projects">
+      <a class="grid-inner animated-button" href="${p.source}" target="_blank">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <img class="icon" src="${root}img/${p.id}_round.png">
+        <p class="projName" tal:content="p.name" />
+        <p class="projDesc" tal:content="p.desc" />
+      </a>
+    </div>
+    <!-- Or simply put $ {p.name} inside <p></p>-->
+  </div>
+</main>

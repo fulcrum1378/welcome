@@ -1,0 +1,142 @@
+@import url(./tools/animated_button.css);
+
+:root {
+    --CP: #2c2c2f; /*#35363A*/
+    --CS: #0073d7;
+    --CSV: #0064ba;
+    --CT: rgb(250, 250, 250); /*tertiary*/
+    --CTV: rgba(250, 250, 250, 0.8);
+
+    --columnWidth: 25%;
+    --gutter: 10px;
+}
+body {
+    background: var(--CP);
+    font-family: input-mono, monospace;
+}
+main {
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+img.mahdi {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+p.mahdi, blockquote.mahdi {
+    color: var(--CT);
+}
+p.mahdi {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-top: 13px;
+}
+blockquote.mahdi {
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin: 8px 5px 0 5px;
+}
+#social {
+    margin: 30px 0;
+}
+#social object {
+    width: 25px;
+    height: 25px;
+}
+.grid-item {
+    width: calc(var(--columnWidth) - var(--gutter));
+    margin: 0 var(--gutter) var(--gutter) 0;
+}
+.grid-inner {
+    width: calc(100% - (var(--gutter) + var(--gutter)));
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+    display: block;
+    text-decoration: none;
+}
+img.icon {
+    width: 100px;
+    height: 100px;
+}
+.grid-inner p {
+    color: var(--CT);
+}
+p.projName {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+p.projDesc {
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    :root {
+        --columnWidth: 33.333%;
+        --gutter: 8px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    :root {
+        --pageHPadding: .75rem;
+        --columnWidth: 50%;
+        --gutter: 6px;
+    }
+    img.icon {
+        width: 67px;
+        height: 67px;
+    }
+    p.projName {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        margin-top: 10px;
+    }
+    p.projDesc {
+        margin-top: 3px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    :root {
+        --pageHPadding: .75rem;
+        --columnWidth: 100%;
+        --gutter: 3px;
+    }
+    .grid-item {
+        width: calc(var(--columnWidth) - (var(--pageHPadding) + var(--gutter) + var(--gutter)));
+        margin: 0 var(--gutter) var(--gutter) var(--gutter);
+    }
+    img.icon {
+        width: 50px;
+        height: 50px;
+    }
+    p.projName {
+        font-size: 14px;
+        letter-spacing: 0;
+        margin-top: 5px;
+    }
+    p.projDesc {
+        margin-top: 1px;
+        font-size: 12px;
+    }
+}
+
+/*@media (prefers-color-scheme: dark) {
+    :root {
+        --CP: #000;
+    }
+}*/
+
+
+@font-face {
+    font-family: input-mono;
+    src: url(./font/input_mono_regular.ttf);
+}

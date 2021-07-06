@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#35363A">
+  <title>${title}</title>
+  <link rel="icon" href="${favicon}">
+  <script src="${root}tools/jquery.js"></script>
+  <script src="${root}tools/bootstrap.bundle.min.js"></script>
+  <script src="${root}tools/masonry.pkgd.min.js"></script>
+  <link rel="stylesheet" href="${root}tools/bootstrap.min.css">
+  <link rel="stylesheet" href="${root}${page}.css">
+</head>
+
+<body>
+<tal metal:use-macro='load:${page}.html'></tal>
+
+<script src="${root}${page}.js"></script>
+</body>
+</html>
