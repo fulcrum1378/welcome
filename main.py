@@ -55,17 +55,17 @@ print(temp["temp.html"](**{
             "desc": "A logical Artificial Intelligence app, an operating system for a robot",
             "source": "https://github.com/fulcrum1378/mergen_android",
         },
-        #{
+        # {
         #    "id": "avabot",
         #    "name": "AvaBot",
         #    "desc": "Speech Recognizer, Text-to-Speech and Optical Character Recognition for Persian language",
         #    "source": "https://github.com/fulcrum1378/avabot-browser",
-        #},
+        # },
         {
-            "id": "sms_exporter",
-            "name": "SMS Exporter",
+            "id": "telexporter",
+            "name": "Telexporter",
             "desc": "Export your messages to HTML, PDF or JSON files",
-            "source": "https://github.com/fulcrum1378/sms_exporter",
+            "source": "https://github.com/fulcrum1378/telexporter",
         },
         {
             "id": "migratio",
@@ -81,10 +81,10 @@ print(temp["temp.html"](**{
             "target": "https://migratio.mahdiparastesh.ir/",
         },
         {
-            "id": "onani",
-            "name": "Onani Counter",
+            "id": "sexbook",
+            "name": "Sexbook",
             "desc": "",
-            "source": "https://github.com/fulcrum1378/onani_counter",
+            "source": "https://github.com/fulcrum1378/sexbook",
         },
         {
             "id": "friend_tracker",
