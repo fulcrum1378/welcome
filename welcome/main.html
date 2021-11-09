@@ -1,8 +1,8 @@
 <main class="container text-center">
   <img src="${root}img/mahdi.jpg" class="mahdi">
-  <p class="mahdi">${header.lang}</p>
+  <p class="mahdi">${header[lang]}</p>
   <blockquote class="mahdi">
-    ${biography.lang}
+    ${biography[lang]}
   </blockquote>
 
   <nav id="social">
@@ -25,8 +25,8 @@
         <span></span>
         <span></span>
         <img class="icon" src="${root}img/${p.id}_round.png">
-        <p class="projName" tal:content="p.name.lang"/>
-        <p class="projDesc" tal:content="p.desc.lang"/>
+        <p class="projName" tal:content="p.name[lang]"/>
+        <p class="projDesc" tal:content="p.desc[lang]"/>
       </a>
     </div>
     <!-- Or simply put $ {p.name} inside <p></p>-->

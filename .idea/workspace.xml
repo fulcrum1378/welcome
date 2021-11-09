@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bd0d1bc-31ba-4132-b447-ff7acda2a00a" name="Changes" comment="2021.11.07 - 3">
+    <list default="true" id="2bd0d1bc-31ba-4132-b447-ff7acda2a00a" name="Changes" comment="2021.11.09 - 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/conscription.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/welcome/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/welcome/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +41,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636299302073</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2021.11.09 - 1">
+      <created>1636487473633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636487473633</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -60,6 +65,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2021.11.07 - 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.11.07 - 3" />
+    <MESSAGE value="2021.11.09 - 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.11.09 - 1" />
   </component>
 </project>
