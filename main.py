@@ -4,7 +4,7 @@ import os
 from chameleon import PageTemplateFile, PageTemplateLoader
 
 folder = "welcome"
-temp = PageTemplateLoader(os.path.join(os.path.dirname(__file__), folder))
+temp = PageTemplateLoader(os.path.join(os.path.dirname(__file__), folder), encoding="utf-8")
 got = {"hl": "en"}
 try:
     for g in cgi.FieldStorage().list: got[g.name] = g.value
