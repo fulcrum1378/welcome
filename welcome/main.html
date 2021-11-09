@@ -1,23 +1,20 @@
 <main class="container text-center">
   <img src="${root}img/mahdi.jpg" class="mahdi">
-  <p class="mahdi">${header[lang]}</p>
+  <p class="mahdi">${header}</p>
   <blockquote class="mahdi">
-    ${biography[lang]}
+    ${biography}
   </blockquote>
 
   <nav id="social">
     <span tal:repeat="s social" class="social"
           data-bs-toggle="tooltip" data-bs-placement="top" title="${s.title}">
       <a href="${s.link}" target="_blank">
-        <!--<object data="${root}img/${s.icon}.svg" type="image/svg+xml"></object>-->
         <img src="${root}img/${s.icon}.svg">
       </a>
     </span>
   </nav>
 
   <div class="grid text-center">
-    <!-- Animated button must be put in an inner element;
-         so that it won't drop out of its bounds! -->
     <div class="grid-item" tal:repeat="p projects">
       <a class="grid-inner animated-button" href="${p.source}" target="_blank">
         <span></span>
@@ -25,10 +22,9 @@
         <span></span>
         <span></span>
         <img class="icon" src="${root}img/${p.id}_round.png">
-        <p class="projName" tal:content="p.name[lang]"/>
-        <p class="projDesc" tal:content="p.desc[lang]"/>
+        <p class="projName" tal:content="p.name"/>
+        <p class="projDesc" tal:content="p.desc"/>
       </a>
     </div>
-    <!-- Or simply put $ {p.name} inside <p></p>-->
   </div>
 </main>
