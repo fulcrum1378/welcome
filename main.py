@@ -11,7 +11,7 @@ try:
 except:
     pass
 l = got["hl"]
-print("Content-type: text/html\n")
+print("Content-Type: text/html; charset=utf-8\n")
 print(temp["temp.html"](**{
     "root": "/" + folder + "/",
     "page": "main",
@@ -24,14 +24,14 @@ print(temp["temp.html"](**{
         "en": "Mahdi Parastesh",
         "fa": "مهدی پرستش"
     }[l],
-    "biography": {
-        "en": """I have 6 years of experience in <b>Full-Stack software engineering</b>.<br><br>
-    The programming languages I'm skilled in are JavaScript, PHP, Java, SQL, Kotlin, Dart, Python and Prolog.
-    I can develop Android apps using mere Java/Kotlin, or also for iOS using Flutter or React Native.
-    I also know Node.js, TensorFlow, PyTorch, MySQL and PostgreSQL.<br>
-    I practice Machine Learning and I'm also an expert in Linux.""",
-        "fa": """"""
-    }[l],
+    #"biography": {
+    #    "en": """I have 6 years of experience in <b>Full-Stack software engineering</b>.<br><br>
+    #The programming languages I'm skilled in are JavaScript, PHP, Java, SQL, Kotlin, Dart, Python and Prolog.
+    #I can develop Android apps using mere Java/Kotlin, or also for iOS using Flutter or React Native.
+    #I also know Node.js, TensorFlow, PyTorch, MySQL and PostgreSQL.<br>
+    #I practice Machine Learning and I'm also an expert in Linux.""",
+    #    "fa": """"""
+    #}[l],
     "social": [
         {
             "icon": "github",
@@ -162,3 +162,4 @@ print(temp["temp.html"](**{
 # HTML Notes:
 # <object data="${root}img/${s.icon}.svg" type="image/svg+xml"></object>
 # Animated button must be put in an inner element; so that it won't drop out of its bounds!
+# Fix the Persian problem at "C:\Python\Lib\site-packages\chameleon\template.py"
