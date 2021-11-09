@@ -1,3 +1,4 @@
+import cgi
 import os
 
 from chameleon import PageTemplateFile, PageTemplateLoader
