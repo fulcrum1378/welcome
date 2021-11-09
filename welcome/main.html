@@ -1,12 +1,8 @@
 <main class="container text-center">
   <img src="${root}img/mahdi.jpg" class="mahdi">
-  <p class="mahdi">Mahdi Parastesh</p>
+  <p class="mahdi">${header.lang}</p>
   <blockquote class="mahdi">
-    I have 6 years of experience in <b>Full-Stack software engineering</b>.<br><br>
-    The programming languages I'm skilled in are JavaScript, PHP, Java, SQL, Kotlin, Dart, Python and Prolog.
-    I can develop Android apps using mere Java/Kotlin, or also for iOS using Flutter or React Native.
-    I also know Node.js, TensorFlow, PyTorch, MySQL and PostgreSQL.<br>
-    I practice Machine Learning and I'm also an expert in Linux.
+    ${biography.lang}
   </blockquote>
 
   <nav id="social">
@@ -29,8 +25,8 @@
         <span></span>
         <span></span>
         <img class="icon" src="${root}img/${p.id}_round.png">
-        <p class="projName" tal:content="p.name"/>
-        <p class="projDesc" tal:content="p.desc"/>
+        <p class="projName" tal:content="p.name.lang"/>
+        <p class="projDesc" tal:content="p.desc.lang"/>
       </a>
     </div>
     <!-- Or simply put $ {p.name} inside <p></p>-->
