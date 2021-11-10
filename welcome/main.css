@@ -28,7 +28,7 @@ img.mahdi {
 p.mahdi, blockquote.mahdi {
     color: var(--CT);
 }
-.mahdi {
+.mahdi, #cv {
     text-shadow: 0px 0px 10px var(--CS);
 }
 p.mahdi {
@@ -41,7 +41,7 @@ blockquote.mahdi {
     font-size: 17px;
     font-weight: normal;
     letter-spacing: 0.5px;
-    margin: 8px 5px 0 5px;
+    margin: 8px 5px 24px 5px;
 }
 #cv {
     font-size: 21px;
@@ -49,10 +49,10 @@ blockquote.mahdi {
     cursor: pointer;
     text-decoration: none;
     margin: 10px 0;
-    transition: all 0.2s;
+	color: #FFF;
 }
 #cv:hover {
-    transform: scale(1.05);
+    text-decoration: underline;
 }
 #social {
     margin: 30px 0;
@@ -60,7 +60,6 @@ blockquote.mahdi {
 .social {
     margin: 0 5px;
     cursor: pointer;
-    transition: all 0.2s;
 }
 .social a {
     text-decoration: none;
@@ -70,7 +69,10 @@ blockquote.mahdi {
     height: var(--socialSize);
 }
 .social a img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+.social a img, .grid-item {
+    transition: all 0.2s;
 }
 .grid-item {
     width: calc(var(--columnWidth) - var(--gutter));
@@ -83,6 +85,9 @@ blockquote.mahdi {
     vertical-align: top;
     display: block;
     text-decoration: none;
+}
+.grid-item:hover {
+	transform: scale(1.05);
 }
 img.icon {
     width: 100px;
