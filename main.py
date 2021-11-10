@@ -24,14 +24,14 @@ print(temp["temp.html"](**{
         "en": "Mahdi Parastesh",
         "fa": "مهدی پرستش"
     }[l],
-    #"biography": {
+    # "biography": {
     #    "en": """I have 6 years of experience in <b>Full-Stack software engineering</b>.<br><br>
-    #The programming languages I'm skilled in are JavaScript, PHP, Java, SQL, Kotlin, Dart, Python and Prolog.
-    #I can develop Android apps using mere Java/Kotlin, or also for iOS using Flutter or React Native.
-    #I also know Node.js, TensorFlow, PyTorch, MySQL and PostgreSQL.<br>
-    #I practice Machine Learning and I'm also an expert in Linux.""",
+    # The programming languages I'm skilled in are JavaScript, PHP, Java, SQL, Kotlin, Dart, Python and Prolog.
+    # I can develop Android apps using mere Java/Kotlin, or also for iOS using Flutter or React Native.
+    # I also know Node.js, TensorFlow, PyTorch, MySQL and PostgreSQL.<br>
+    # I practice Machine Learning and I'm also an expert in Linux.""",
     #    "fa": """"""
-    #}[l],
+    # }[l],
     "social": [
         {
             "icon": "github",
