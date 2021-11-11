@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import urllib3
 
+print("Content-Type: text/plain\n")
 urllib3.util.make_headers(disable_cache=True)
 raw = str(urllib3.PoolManager().request('GET', 'https://www.paymentstate.com/charge-account-paypal/')
           .data.decode('utf-8'))

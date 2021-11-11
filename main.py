@@ -2,6 +2,7 @@ import cgi
 import os
 
 from chameleon import PageTemplateFile, PageTemplateLoader
+# Chameleon doesn't support Persian characters!
 
 folder = "welcome"
 temp = PageTemplateLoader(os.path.join(os.path.dirname(__file__), folder), encoding="utf-8")
@@ -162,4 +163,3 @@ print(temp["temp.html"](**{
 # HTML Notes:
 # <object data="${root}img/${s.icon}.svg" type="image/svg+xml"></object>
 # Animated button must be put in an inner element; so that it won't drop out of its bounds!
-# Fix the Persian problem at "C:\Python\Lib\site-packages\chameleon\template.py"
