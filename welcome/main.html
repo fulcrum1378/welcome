@@ -1,6 +1,6 @@
 <main class="container text-center">
   <img src="${root}img/mahdi.jpg" class="mahdi">
-  <p class="mahdi">${header}</p>
+  <p class="mahdi">Mahdi Parastesh</p>
   <blockquote class="mahdi">
     I have 6 years of experience in <b>Full-Stack software engineering</b>.<br><br>
     The programming languages I'm skilled in are JavaScript, PHP, Java, SQL, Kotlin, Dart, Python and Prolog.
@@ -21,7 +21,7 @@
   </nav>
 
   <div class="grid text-center">
-    <div class="grid-item" tal:repeat="p projects">
+    <div class="grid-item ${p.id}" tal:repeat="p projects">
       <a class="grid-inner animated-button" href="${p.source}" target="_blank">
         <span></span>
         <span></span>
