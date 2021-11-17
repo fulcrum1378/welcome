@@ -1,4 +1,11 @@
 <main class="container text-center">
+  <img src="${root}img/en.svg" class="dropdown-toggle" id="langSelect" data-bs-toggle="dropdown">
+  <ul class="dropdown-menu" aria-labelledby="langSelect" id="lang">
+    <li><img src="${root}img/en.svg" data-lang="en"></li>
+    <li><img src="${root}img/fa.svg" data-lang="fa"></li>
+    <!--<li><img src="${root}img/ar.svg" data-lang="ar"></li>-->
+  </ul><!--In case of SVG error, add ' version="1.1"' to the SVG tag and turn "img/png" to "image/png"-->
+  
   <img src="${root}img/mahdi.jpg" class="mahdi">
   <p class="mahdi">Mahdi Parastesh</p>
   <blockquote class="mahdi">
@@ -34,3 +41,7 @@
     </div>
   </div>
 </main>
+<div class="spinner-grow text-light" role="status" id="loading">
+  <!--class: "spinner-border" instead of "spinner-grow"-->
+  <span class="visually-hidden">Loading...</span>
+</div>

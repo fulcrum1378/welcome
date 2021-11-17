@@ -18,17 +18,17 @@ print(temp["temp.html"](**{
             "title": "fulcrum1378 (Mahdi Parastesh) · GitHub",
         },
         {
-            "icon": "linkedin-in",
+            "icon": "linkedin",
             "link": "https://www.linkedin.com/in/mahdi-parastesh-a72ab51b9/",
             "title": "Mahdi Parastesh | LinkedIn",
         },
         {
-            "icon": "stack-overflow",
+            "icon": "stackoverflow",
             "link": "https://stackoverflow.com/users/10728785/mahdi-parastesh",
             "title": "User Mahdi Parastesh - Stack Overflow",
         },
         {
-            "icon": "facebook-f",
+            "icon": "facebook",
             "link": "https://www.facebook.com/mpg973",
             "title": "Mahdi Prs",
         },

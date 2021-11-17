@@ -14,10 +14,40 @@
 body {
     background: var(--CP);
     font-family: input-mono, monospace;
+	overflow-y: hidden;
+}
+#loading {
+	text-align: center;
+	position: fixed;
+	top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
 }
 main {
-    padding-top: 25px;
+	padding-top: 25px;
     padding-bottom: 35px;
+	opacity: 0;
+}
+#lang {
+	min-width: 20px;
+	background: transparent;
+	padding-top: 10px;
+}
+#lang li {
+	padding: 0 0;
+}
+#langSelect, #lang li img {
+	width: 80px;
+	height: 60px;
+	cursor: pointer;
+	transition: opacity 100ms;
+}
+#langSelect:hover, #lang li img:hover {
+	opacity: 0.7;
+}
+#langSelect {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 img.mahdi {
     width: 200px;
@@ -42,6 +72,7 @@ blockquote.mahdi {
     font-weight: normal;
     letter-spacing: 0.5px;
     margin: 8px 5px 24px 5px;
+	line-height: 34px;
 }
 #cv {
     font-size: 21px;
@@ -105,6 +136,7 @@ p.projDesc {
     margin-top: 5px;
     font-size: 15px;
     letter-spacing: 0;
+	line-height: 34px;
 }
 
 
@@ -145,4 +177,8 @@ p.projDesc {
 @font-face {
     font-family: input-mono;
     src: url(./font/input_mono_regular.ttf);
+}
+@font-face {
+    font-family: IRANYekan;
+    src: url(./font/iran_yekan.ttf);
 }
