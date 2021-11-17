@@ -42,6 +42,11 @@ print(temp["temp.html"](**{
             "link": "https://www.instagram.com/fulcrum1378/",
             "title": "Mahdi Parastesh (@fulcrum1378) • Instagram photos and videos",
         },
+        {
+            "icon": "linktree",
+            "link": "https://linktr.ee/fulcrum1378",
+            "title": "Mahdi Parastesh | Linktree",
+        },
     ],
     "projects": [
         {
@@ -53,7 +58,8 @@ print(temp["temp.html"](**{
         {
             "id": "mergen",
             "name": "AvaBot",
-            "desc": "Speech Recognizer, Text-to-Speech and Optical Character Recognition for Persian language",
+            "desc": "Speech Recognizer, Text-to-Speech and Optical Character Recognition for Persian and Turkic "
+                    "languages",
             "source": "https://github.com/fulcrum1378/avabot-browser",
         },
         {

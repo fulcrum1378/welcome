@@ -26,7 +26,7 @@ function translate(hl) {
             $(".mergen:eq(1) .projName").text("مِرگِن");
             $(".mergen:eq(1) .projDesc").text("یک نرم افزار هوش مصنوعی منطقی، سیستم عاملی برای یک ربات.");
             $(".mergen:eq(2) .projName").text("آوابات");
-            $(".mergen:eq(2) .projDesc").text("ابزار های تشخیص گفتار، تبدیل متن به گفتار و تشخیص متن از روی عکس برای زبان فارسی");
+            $(".mergen:eq(2) .projDesc").text("ابزار های تشخیص گفتار، تبدیل متن به گفتار و تشخیص متن از روی عکس برای زبان های فارسی و ترکی");
             $(".telexporter .projName").text("تلکسپورتر");
             $(".telexporter .projDesc").text("اس ام اس ها و تاریخچه تماس های خود را در قالب های وب، پی دی اف و جیسون استخراج کنید.");
             $(".migratio:eq(1) .projName").text("میگراتیو");
