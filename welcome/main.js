@@ -29,10 +29,12 @@ function translate(hl) {
             $(".mergen:eq(1) .projDesc").text("ابزار های تشخیص گفتار، تبدیل متن به گفتار و تشخیص متن از روی عکس برای زبان های فارسی و ترکی");
             $(".telexporter .projName").text("تلکسپورتر");
             $(".telexporter .projDesc").text("اس ام اس ها و تاریخچه تماس های خود را در قالب های وب، پی دی اف و جیسون استخراج کنید.");
-            $(".migratio:eq(0) .projName").text("میگراتیو");
-            $(".migratio:eq(0) .projDesc").text("وبسایت وردپرسی میگراتیو");
-            $(".migratio:eq(1) .projName").text("میگراتیو (اندروید)");
-            $(".migratio:eq(1) .projDesc").text("یک ابزار جغرافی-آماری برای تعیین کردن بهترین مقصد مهاجرت افراد مختلف.");
+            $(".migratio:eq(0) .projName").text("میگراتیو (اندروید)");
+            $(".migratio:eq(0) .projDesc").text("یک ابزار جغرافی-آماری برای تعیین کردن بهترین مقصد مهاجرت افراد مختلف.");
+            $(".migratio:eq(1) .projName").text("میگراتیو");
+            $(".migratio:eq(1) .projDesc").text("وبسایت وردپرسی میگراتیو");
+            $(".fortuna .projName").text("فورتونا");
+            $(".fortuna .projDesc").text("نرم افزاری برای فلسفه «هدونیسم»!");
             $(".sexbook .projName").text("سکسبوک");
             $(".sexbook .projDesc").text("زندگی جنسی خود را به آسانی کنترل کنید.");
             $(".friend_tracker .projName").text("ردیاب رفقا");
