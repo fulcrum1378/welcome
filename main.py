@@ -70,16 +70,22 @@ print(temp["temp.html"](**{
         },
         {
             "id": "migratio",
+            "name": "Migratio (Android)",
+            "desc": "A geographical statistical tool for determining someone's best destination for migration.",
+            "source": "https://github.com/fulcrum1378/migratio_android",
+            "target": "https://migratio.mahdiparastesh.ir/",
+        },
+        {
+            "id": "migratio",
             "name": "Migratio",
             "desc": "Migratio Wordpress-powered website",
             "source": "https://github.com/fulcrum1378/migratio",
         },
         {
-            "id": "migratio",
-            "name": "Migratio (Android)",
-            "desc": "A geographical statistical tool for determining someone's best destination for migration.",
-            "source": "https://github.com/fulcrum1378/migratio_android",
-            "target": "https://migratio.mahdiparastesh.ir/",
+            "id": "fortuna",
+            "name": "Fortuna",
+            "desc": "An application of the Hedonist philosophy!",
+            "source": "https://github.com/fulcrum1378/fortuna",
         },
         {
             "id": "sexbook",
