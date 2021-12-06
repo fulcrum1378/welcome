@@ -87,12 +87,12 @@ print(temp["temp.html"](**{
             "desc": "An application of the Hedonist philosophy!",
             "source": "https://github.com/fulcrum1378/fortuna",
         },
-        {
-            "id": "sexbook",
-            "name": "Sexbook",
-            "desc": "Control your sexual life easily.",
-            "source": "https://github.com/fulcrum1378/sexbook",
-        },
+        # {
+        #    "id": "sexbook",
+        #    "name": "Sexbook",
+        #    "desc": "Control your sexual life easily.",
+        #    "source": "https://github.com/fulcrum1378/sexbook",
+        # },
         {
             "id": "friend_tracker",
             "name": "Friend Tracker",
