@@ -111,14 +111,14 @@ blockquote.mahdi {
 }
 .grid-inner {
     width: calc(100% - (var(--gutter) + var(--gutter)));
-    cursor: pointer;
+    cursor: default;
     text-align: center;
     vertical-align: top;
     display: block;
     text-decoration: none;
 }
 .grid-item:hover {
-	transform: scale(1.05);
+	transform: scale(1.04);
 }
 img.icon {
     width: 100px;
@@ -137,6 +137,18 @@ p.projDesc {
     font-size: 15px;
     letter-spacing: 0;
 	line-height: 34px;
+}
+.anchor hr {
+    background-color: var(--CT);
+}
+.anchor a {
+    color: var(--CT);
+    cursor: pointer;
+    text-decoration: underline;
+    position: relative;
+}
+.anchor > a:hover {
+    text-decoration: none;
 }
 
 

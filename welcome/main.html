@@ -29,7 +29,7 @@
 
   <div class="grid text-center">
     <div class="grid-item ${p.id}" tal:repeat="p projects">
-      <a class="grid-inner animated-button" href="${p.source}" target="_blank">
+      <div class="grid-inner animated-button">
         <span></span>
         <span></span>
         <span></span>
@@ -37,7 +37,12 @@
         <img class="icon" src="${root}img/${p.id}_round.png">
         <p class="projName" tal:content="p.name"/>
         <p class="projDesc" tal:content="p.desc"/>
-      </a>
+        <div tal:repeat="a p.anchors" class="anchor">
+          <hr>
+          <a href="${a.link}" target="_blank"
+               data-bs-toggle="tooltip" data-bs-placement="top" title="${a.title}">${a.name}</a>
+        </div>
+      </div>
     </div>
   </div>
 </main>

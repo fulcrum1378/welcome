@@ -29,10 +29,8 @@ function translate(hl) {
             $(".mergen:eq(1) .projDesc").text("ابزار های تشخیص گفتار، تبدیل متن به گفتار و تشخیص متن از روی عکس برای زبان های فارسی و ترکی");
             $(".telexporter .projName").text("تلکسپورتر");
             $(".telexporter .projDesc").text("اس ام اس ها و تاریخچه تماس های خود را در قالب های وب، پی دی اف و جیسون استخراج کنید.");
-            $(".migratio:eq(0) .projName").text("میگراتیو (اندروید)");
-            $(".migratio:eq(0) .projDesc").text("یک ابزار جغرافی-آماری برای تعیین کردن بهترین مقصد مهاجرت افراد مختلف.");
-            $(".migratio:eq(1) .projName").text("میگراتیو");
-            $(".migratio:eq(1) .projDesc").text("وبسایت وردپرسی میگراتیو");
+            $(".migratio .projName").text("میگراتیو (اندروید)");
+            $(".migratio .projDesc").text("یک ابزار جغرافی-آماری برای تعیین کردن بهترین مقصد مهاجرت افراد مختلف.");
             $(".fortuna .projName").text("فورتونا");
             $(".fortuna .projDesc").text("نرم افزاری برای فلسفه «هدونیسم»!");
             $(".sexbook .projName").text("سکسبوک");
@@ -42,16 +40,45 @@ function translate(hl) {
             $(".saam .projName").text("سام");
             $(".saam .projDesc").text("گرداور و ذخیره کننده اطلاعات بورس، ساخته شده بر مبنای متاتریدر 5");
 			$("body").css("font-family", "IRANYekan");
+			$(".anchor a").each(function() {// i
+			    let text = $(this).text();
+			    switch (text) {
+			        case "Android Version":
+			            text = "نسخه اندروید";
+			            break;
+			        case "Web Version":
+			            text = "نسخه وب";
+			            break;
+			        case "Android Source":
+			            text = "سورس اندروید";
+			            break;
+			        case "Flutter Source":
+			            text = "سورس فلاتر";
+			            break;
+			        case "Software Source":
+			            text = "سورس نرم افزار";
+			            break;
+			        case "Web Template":
+			            text = "قالب وب";
+			            break;
+			        case "Server Source":
+			            text = "سورس سرور";
+			            break;
+			        case "Android Browser Source":
+			            text = "سورس مرورگر اندروید";
+			            break;
+			    }
+			    $(this).text(text);
+			});
             break;
 		default:
-		    document.location.reload();
+		    document.location.assign(document.location + "?hl=en");
 			break;
     }
 	if (["fa", "ar"].includes(hl))
 	    $("blockquote.mahdi, .projDesc").css("direction", "rtl");
 	$('.grid').masonry();
+	$("#langSelect").attr("src",$("#lang li img[data-lang="+hl+"]").attr("src"));
 }
-$("#lang li img").on('click', function(e) {
-	$("#langSelect").attr("src", $(this).attr("src"));
-	translate($(this).attr("data-lang"));
-});
+$("#lang li img").on('click', function(e) { translate($(this).attr("data-lang")); });
+if ($("#country").val() == "IR") translate("fa");

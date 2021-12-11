@@ -1,16 +1,20 @@
 import os
+import requests
 
-from chameleon import PageTemplateFile, PageTemplateLoader
+from chameleon import PageTemplateLoader
 
 folder = "welcome"
+country = requests.get("https://geolocation-db.com/json/{}&position=true".format(os.environ["REMOTE_ADDR"])
+                       ).json()["country_code"]
 temp = PageTemplateLoader(os.path.join(os.path.dirname(__file__), folder), encoding="utf-8")
 # Chameleon doesn't support Persian characters!
 print("Content-Type: text/html\n")
-print(temp["temp.html"](**{
+data = {
     "root": "/" + folder + "/",
     "page": "main",
     "favicon": "/mahdi/Images/fav-icon.ico",
     "title": "Mahdi Parastesh",
+    "country": country,
     "social": [
         {
             "icon": "github",
@@ -21,6 +25,11 @@ print(temp["temp.html"](**{
             "icon": "linkedin",
             "link": "https://www.linkedin.com/in/mahdi-parastesh-a72ab51b9/",
             "title": "Mahdi Parastesh | LinkedIn",
+        },
+        {
+            "icon": "google_play",
+            "link": "https://play.google.com/store/apps/dev?id=8797895762316770334",
+            "title": "Android Apps by Mahdi Parastesh on Google Play",
         },
         {
             "icon": "stackoverflow",
@@ -53,60 +62,118 @@ print(temp["temp.html"](**{
             "id": "mergen",
             "name": "Mergen",
             "desc": "A logical Artificial Intelligence software, an operating system for a robot.",
-            "source": "https://github.com/fulcrum1378/mergen_android",
+            "anchors": [
+                {
+                    "name": "Server Source",
+                    "link": "https://github.com/fulcrum1378/mergen",
+                    "title": ""
+                },
+                {
+                    "name": "Android Source",
+                    "link": "https://github.com/fulcrum1378/mergen_android",
+                    "title": ""
+                },
+            ]
         },
         {
             "id": "mergen",
             "name": "AvaBot",
             "desc": "Speech Recognizer, Text-to-Speech and Optical Character Recognition for Persian and Turkic "
                     "languages",
-            "source": "https://github.com/fulcrum1378/avabot-browser",
+            "anchors": [
+                {
+                    "name": "Android Browser Source",
+                    "link": "https://github.com/fulcrum1378/avabot-browser",
+                    "title": ""
+                },
+            ]
         },
         {
             "id": "telexporter",
             "name": "Telexporter",
             "desc": "Export your messages and call history to HTML, PDF or JSON files.",
-            "source": "https://github.com/fulcrum1378/telexporter",
-        },
-        {
-            "id": "migratio",
-            "name": "Migratio (Android)",
-            "desc": "A geographical statistical tool for determining someone's best destination for migration.",
-            "source": "https://github.com/fulcrum1378/migratio_android",
-            "target": "https://migratio.mahdiparastesh.ir/",
+            "anchors": [
+                {
+                    "name": "Android Source",
+                    "link": "https://github.com/fulcrum1378/telexporter",
+                    "title": ""
+                },
+            ]
         },
         {
             "id": "migratio",
             "name": "Migratio",
-            "desc": "Migratio Wordpress-powered website",
-            "source": "https://github.com/fulcrum1378/migratio",
+            "desc": "A geographical statistical tool for determining someone's best destination for migration.",
+            "anchors": [
+                {
+                    "name": "Web Version",
+                    "link": "https://migratio.mahdiparastesh.ir/",
+                    "title": ""
+                },
+                {
+                    "name": "Android Source",
+                    "link": "https://github.com/fulcrum1378/migratio_android",
+                    "title": ""
+                },
+                {
+                    "name": "Web Template",
+                    "link": "https://github.com/fulcrum1378/migratio",
+                    "title": "Wordpress Theme"
+                },
+            ]
         },
         {
             "id": "fortuna",
             "name": "Fortuna",
             "desc": "An application of the Hedonist philosophy!",
-            "source": "https://github.com/fulcrum1378/fortuna",
+            "anchors": [
+                {
+                    "name": "Flutter Source",
+                    "link": "https://github.com/fulcrum1378/fortuna",
+                    "title": ""
+                },
+            ]
         },
-        # {
-        #    "id": "sexbook",
-        #    "name": "Sexbook",
-        #    "desc": "Control your sexual life easily.",
-        #    "source": "https://github.com/fulcrum1378/sexbook",
-        # },
         {
             "id": "friend_tracker",
             "name": "Friend Tracker",
             "desc": "Easily track your friends on the map.",
-            "source": "https://github.com/fulcrum1378/friend_tracker"
+            "anchors": [
+                {
+                    "name": "Android Source",
+                    "link": "https://github.com/fulcrum1378/friend_tracker",
+                    "title": ""
+                },
+            ]
         },
         {
             "id": "saam",
             "name": "Saam",
             "desc": "Stock market data collector based on MetaTrader5",
-            "source": "https://github.com/fulcrum1378/saam",
+            "anchors": [
+                {
+                    "name": "Software Source",
+                    "link": "https://github.com/fulcrum1378/saam",
+                    "title": ""
+                },
+            ]
         },
     ],
-}))
+}
+if country != "IR":
+    data["projects"].append({
+        "id": "sexbook",
+        "name": "Sexbook",
+        "desc": "Control your sexual life easily.",
+        "anchors": [
+            {
+                "name": "Android - Source",
+                "link": "https://github.com/fulcrum1378/sexbook",
+                "title": ""
+            },
+        ]
+    })
+print(temp["temp.html"](**data))
 
 # HTML Notes:
 # <object data="${root}img/${s.icon}.svg" type="image/svg+xml"></object>
