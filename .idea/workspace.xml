@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bd0d1bc-31ba-4132-b447-ff7acda2a00a" name="Changes" comment="2021.12.01 - 2">
-      <change afterPath="$PROJECT_DIR$/welcome/img/google_play.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+    <list default="true" id="2bd0d1bc-31ba-4132-b447-ff7acda2a00a" name="Changes" comment="2021.12.12 - 1">
+      <change afterPath="$PROJECT_DIR$/welcome/privacy/migratio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome/img/linktree.svg" beforeDir="false" afterPath="$PROJECT_DIR$/welcome/img/linktree.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/welcome/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/welcome/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/welcome/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/welcome/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/welcome/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/welcome/temp.html" afterDir="false" />
     </list>
@@ -22,6 +18,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -129,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638338529051</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2021.12.12 - 1">
+      <created>1639264540404</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1639264540404</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +168,7 @@
     <MESSAGE value="2021.11.17 - 1" />
     <MESSAGE value="2021.12.01 - 1" />
     <MESSAGE value="2021.12.01 - 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.12.01 - 2" />
+    <MESSAGE value="2021.12.12 - 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.12.12 - 1" />
   </component>
 </project>

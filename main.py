@@ -1,11 +1,20 @@
+import cgi
 import os
-import requests
 
+import requests
 from chameleon import PageTemplateLoader
 
 folder = "welcome"
-country = requests.get("https://geolocation-db.com/json/{}&position=true".format(os.environ["REMOTE_ADDR"])
-                       ).json()["country_code"]
+try:
+    country = requests.get("https://geolocation-db.com/json/{}&position=true".format(os.environ["REMOTE_ADDR"])
+                           ).json()["country_code"]
+except:
+    country = ""
+got = {"hl": ""}
+try:
+    for g in cgi.FieldStorage().list: got[g.name] = g.value
+except:
+    pass
 temp = PageTemplateLoader(os.path.join(os.path.dirname(__file__), folder), encoding="utf-8")
 # Chameleon doesn't support Persian characters!
 print("Content-Type: text/html\n")
@@ -15,6 +24,7 @@ data = {
     "favicon": "/mahdi/Images/fav-icon.ico",
     "title": "Mahdi Parastesh",
     "country": country,
+    "help": got["hl"],
     "social": [
         {
             "icon": "github",
@@ -119,6 +129,11 @@ data = {
                     "name": "Web Template",
                     "link": "https://github.com/fulcrum1378/migratio",
                     "title": "Wordpress Theme"
+                },
+                {
+                    "name": "Privacy Policy",
+                    "link": "https://mahdiparastesh.ir/welcome/privacy/migratio.html",
+                    "title": ""
                 },
             ]
         },
