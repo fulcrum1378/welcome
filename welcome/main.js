@@ -49,8 +49,8 @@ function translate(hl) {
 			    "Software Source": "سورس نرم افزار",
 			    "Web Template": "قالب وب",
 			    "Server Source": "سورس سرور",
-			    "Android Browser Source": "سورس مرورگر اندروید"
-			    "Privacy Policy": "سیاست حریم خصوصی"
+			    "Android Browser Source": "سورس مرورگر اندروید",
+			    "Privacy Policy": "سیاست حریم خصوصی",
 			};
             break;
 		default:
