@@ -21,7 +21,7 @@ print("Content-Type: text/html\n")
 data = {
     "root": "/" + folder + "/",
     "page": "main",
-    "favicon": "/mahdi/Images/fav-icon.ico",
+    "favicon": "https://mahdi.mahdiparastesh.ir/Images/fav-icon.ico",
     "title": "Mahdi Parastesh",
     "country": country,
     "help": got["hl"],
