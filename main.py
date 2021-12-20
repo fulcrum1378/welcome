@@ -108,6 +108,11 @@ data = {
                     "link": "https://github.com/fulcrum1378/telexporter",
                     "title": ""
                 },
+                {
+                    "name": "Privacy Policy",
+                    "link": "https://mahdiparastesh.ir/welcome/privacy/telexporter.html",
+                    "title": ""
+                },
             ]
         },
         {
@@ -118,11 +123,6 @@ data = {
                 {
                     "name": "Web Version",
                     "link": "https://migratio.mahdiparastesh.ir/",
-                    "title": ""
-                },
-                {
-                    "name": "Android Source",
-                    "link": "https://github.com/fulcrum1378/migratio_android",
                     "title": ""
                 },
                 {
