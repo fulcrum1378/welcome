@@ -49,25 +49,25 @@ main {
 	top: 0;
 	left: 0;
 }
-img.mahdi {
+figure img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: 3px solid var(--CS);
 }
-p.mahdi, blockquote.mahdi {
+figcaption, blockquote {
     color: var(--CT);
 }
-.mahdi, #cv {
+figcaption, blockquote, #cv {
     text-shadow: 0px 0px 10px var(--CS);
 }
-p.mahdi {
+figcaption {
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 1.5px;
     margin-top: 13px;
 }
-blockquote.mahdi {
+blockquote {
     font-size: 17px;
     font-weight: normal;
     letter-spacing: 0.5px;
