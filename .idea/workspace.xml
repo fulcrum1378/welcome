@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bd0d1bc-31ba-4132-b447-ff7acda2a00a" name="Changes" comment="2021.12.12 - 3">
+    <list default="true" id="2bd0d1bc-31ba-4132-b447-ff7acda2a00a" name="Changes" comment="2021.12.17 - 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/welcome/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/welcome/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -60,6 +65,7 @@
       <workItem from="1637357875022" duration="65000" />
       <workItem from="1639345800670" duration="163000" />
       <workItem from="1639750087083" duration="26000" />
+      <workItem from="1640095607797" duration="5240000" />
     </task>
     <task id="LOCAL-00001" summary="2021.11.07 - 3">
       <created>1636299302073</created>

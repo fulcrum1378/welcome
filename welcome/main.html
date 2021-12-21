@@ -1,48 +1,54 @@
-<main class="container text-center">
+<main class="container text-center" itemscope itemtype="https://schema.org/Person">
   <img src="${root}img/en.svg" class="dropdown-toggle" id="langSelect" data-bs-toggle="dropdown">
   <ul class="dropdown-menu" aria-labelledby="langSelect" id="lang">
     <li><img src="${root}img/en.svg" data-lang="en"></li>
     <li><img src="${root}img/fa.svg" data-lang="fa"></li>
     <!--<li><img src="${root}img/ar.svg" data-lang="ar"></li>-->
   </ul><!--In case of SVG error, add ' version="1.1"' to the SVG tag and turn "img/png" to "image/png"-->
-  
+
   <figure>
-    <img src="${root}img/mahdi.jpg">
-    <figcaption>Mahdi Parastesh</figcaption>
+    <img src="${root}img/mahdi.jpg" itemprop="image">
+    <figcaption itemprop="name">Mahdi Parastesh</figcaption>
   </figure>
-  <blockquote>
-    I have 6 years of experience in <b>Full-Stack software engineering</b>.<br><br>
-    The programming languages I'm skilled in are JavaScript, PHP, Java, SQL, Kotlin, Dart, Python and Prolog.
-    I can develop Android apps using mere Java/Kotlin, or also for iOS using Flutter or React Native.
-    I also know Node.js, TensorFlow, PyTorch, MySQL and PostgreSQL.<br>
-    I practice Machine Learning and I'm also an expert in Linux.
+  <blockquote itemprop="description">
+    <p itemprop="disambiguatingDescription">
+      I have 6 years of experience in <b>Full-Stack software engineering</b>.
+    </p><br><br>
+    <p itemprop="knowsAbout">The programming languages I'm skilled in are JavaScript, PHP, Java, SQL, Kotlin, Dart,
+      Python and Prolog.
+      I can develop Android apps using mere Java/Kotlin, or also for iOS using Flutter or React Native.
+      I also know Node.js, TensorFlow, PyTorch, MySQL and PostgreSQL.<br>
+      I practice Machine Learning and I'm also an expert in Linux.</p>
   </blockquote>
 
-  <a href="${root}cv.pdf" target="_blank" id="cv">View My CV</a>
+  <a href="${root}cv.pdf" target="_blank" id="cv" itemprop="mainEntityOfPage">View My CV</a>
 
   <nav id="social">
     <span tal:repeat="s social" class="social"
-          data-bs-toggle="tooltip" data-bs-placement="top" title="${s.title}">
-      <a href="${s.link}" target="_blank">
-        <img src="${root}img/${s.icon}.svg">
+          data-bs-toggle="tooltip" data-bs-placement="top" title="${s.title}"
+          itemprop="mainEntityOfPage" itemscope itemtype="https://schema.org/ProfilePage">
+      <a href="${s.link}" target="_blank" itemprop="relatedLink">
+        <img src="${root}img/${s.icon}.svg" itemprop="primaryImageOfPage">
       </a>
     </span>
   </nav>
 
-  <div class="grid text-center">
-    <section class="grid-item ${p.id}" tal:repeat="p projects">
+  <div class="grid text-center" id="projects">
+    <section class="grid-item ${p.id}" itemprop="subjectOf"
+             itemscope itemtype="https://schema.org/SoftwareApplication"
+             tal:repeat="p projects">
       <div class="grid-inner animated-button">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <img class="icon" src="${root}img/${p.id}_round.png">
-        <p class="projName" tal:content="p.name"/>
-        <p class="projDesc" tal:content="p.desc"/>
+        <img src="${root}img/${p.id}_round.png" class="icon" itemprop="image">
+        <p class="projName" itemprop="name" tal:content="p.name"/>
+        <p class="projDesc" itemprop="disambiguatingDescription" tal:content="p.desc"/>
         <div tal:repeat="a p.anchors" class="anchor">
           <hr>
           <a href="${a.link}" target="_blank"
-               data-bs-toggle="tooltip" data-bs-placement="top" title="${a.title}">${a.name}</a>
+             data-bs-toggle="tooltip" data-bs-placement="top" title="${a.title}">${a.name}</a>
         </div>
       </div>
     </section>
