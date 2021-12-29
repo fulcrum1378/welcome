@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /.well-known/
+Disallow: /misc/
+Disallow: /welcome/font/
+Disallow: /welcome/privacy/
+Disallow: /welcome/main.html
+Disallow: /welcome/temp.html

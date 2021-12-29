@@ -177,6 +177,12 @@ p.projDesc {
         width: calc(var(--columnWidth) - (var(--pageHPadding) + var(--gutter) + var(--gutter)));
         margin: 0 var(--gutter) var(--gutter) var(--gutter);
     }
+	#social {
+        margin: 30px 75px;
+    }
+	.social a img {
+        margin: 20px 0;
+	}
 }
 
 /*@media (prefers-color-scheme: dark) {
