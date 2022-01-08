@@ -175,19 +175,19 @@ data = {
         },
     ],
 }
-if country != "IR":
-    data["projects"].append({
-        "id": "sexbook",
-        "name": "Sexbook",
-        "desc": "Control your sexual life easily.",
-        "anchors": [
-            {
-                "name": "Android - Source",
-                "link": "https://github.com/fulcrum1378/sexbook",
-                "title": ""
-            },
-        ]
-    })
+#if country != "IR":
+#    data["projects"].append({
+#        "id": "sexbook",
+#        "name": "Sexbook",
+#        "desc": "Control your sexual life easily.",
+#        "anchors": [
+#            {
+#                "name": "Android - Source",
+#                "link": "https://github.com/fulcrum1378/sexbook",
+#                "title": ""
+#            },
+#        ]
+#    })
 print(temp["temp.html"](**data))
 
 # HTML Notes:
