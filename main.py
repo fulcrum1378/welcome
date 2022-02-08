@@ -69,6 +69,23 @@ data = {
     ],
     "projects": [
         {
+            "id": "instatools",
+            "name": "InstaTools",
+            "desc": "Find unfollowers, download all saved posts, download any post and export DMs into PDF and HTML.",
+            "anchors": [
+                {
+                    "name": "Google Play",
+                    "link": "https://play.google.com/store/apps/details?id=ir.mahdiparastesh.instatools",
+                    "title": ""
+                },
+                {
+                    "name": "Privacy Policy",
+                    "link": "https://mahdiparastesh.ir/welcome/privacy/instatools.html",
+                    "title": ""
+                },
+            ]
+        },
+        {
             "id": "mergen",
             "name": "Mergen",
             "desc": "A logical Artificial Intelligence software, an operating system for a robot.",
@@ -81,19 +98,6 @@ data = {
                 {
                     "name": "Android Source",
                     "link": "https://github.com/fulcrum1378/mergen_android",
-                    "title": ""
-                },
-            ]
-        },
-        {
-            "id": "mergen",
-            "name": "AvaBot",
-            "desc": "Speech Recognizer, Text-to-Speech and Optical Character Recognition for Persian and Turkic "
-                    "languages",
-            "anchors": [
-                {
-                    "name": "Android Browser Source",
-                    "link": "https://github.com/fulcrum1378/avabot-browser",
                     "title": ""
                 },
             ]
@@ -121,7 +125,12 @@ data = {
             "desc": "A geographical statistical tool for determining someone's best destination for migration.",
             "anchors": [
                 {
-                    "name": "Web Version",
+                    "name": "Google Play",
+                    "link": "https://play.google.com/store/apps/details?id=ir.mahdiparastesh.migratio",
+                    "title": ""
+                },
+                {
+                    "name": "Website",
                     "link": "https://migratio.mahdiparastesh.ir/",
                     "title": ""
                 },

@@ -24,32 +24,29 @@ function translate(hl) {
             $("figcaption").text("مهدی پرستش");
             $("blockquote").html('بنده مدت 6 سال در برنامه نویسی فولستک (بک اند + فرانت اند) و 3 سال در برنامه نویسی اندروید (با زبان های جاوا و کاتلین، بعلاوه فریمورک «فلاتر») تجربه دارم. از سال 1399 نیز به یادگیری سیستم عامل های لینوکسی (خصوصا فدورا، اوبونتو و سنتوس) و یونیکسی (FreeBSD و OpenBSD)، بعلاوه Windows Server و کسب تجربه در آنها مشغول شدم و در سیستم عامل جدید الورود شرکت هواوی (HarmonyOS) نیز کمی مهارت دارم. از سال 1400، الگوریتم های «هوش مصنوعی» را یاد گرفته و هم اکنون مشغول مطالعه و تمرین در این زمینه هستم.');
             $("#cv").text("مشاهده رزومه من");
-            $(".mergen:eq(0) .projName").text("مِرگِن");
-            $(".mergen:eq(0) .projDesc").text("یک نرم افزار هوش مصنوعی منطقی، سیستم عاملی برای یک ربات.");
-            $(".mergen:eq(1) .projName").text("آوابات");
-            $(".mergen:eq(1) .projDesc").text("ابزار های تشخیص گفتار، تبدیل متن به گفتار و تشخیص متن از روی عکس برای زبان های فارسی و ترکی");
+            $(".instatools .projName").text("اینستاتولز");
+            $(".instatools .projDesc").text("آنفالویاب، دانلود هر گونه پست و استوری از اینستاگرام، دانلود پست های سیو شده و استخراج دایرکت ها در پی دی اف و اچ تی ام ال.");
+            $(".mergen .projName").text("مِرگِن");
+            $(".mergen .projDesc").text("یک نرم افزار هوش مصنوعی منطقی، سیستم عاملی برای یک ربات.");
             $(".telexporter .projName").text("تلکسپورتر");
             $(".telexporter .projDesc").text("اس ام اس ها و تاریخچه تماس های خود را در قالب های وب، پی دی اف و جیسون استخراج کنید.");
             $(".migratio .projName").text("میگراتیو");
             $(".migratio .projDesc").text("یک ابزار جغرافی-آماری برای تعیین کردن بهترین مقصد مهاجرت افراد مختلف.");
             $(".fortuna .projName").text("فورتونا");
             $(".fortuna .projDesc").text("نرم افزاری برای فلسفه «هدونیسم»!");
-            $(".sexbook .projName").text("سکسبوک");
-            $(".sexbook .projDesc").text("زندگی جنسی خود را به آسانی کنترل کنید.");
             $(".friend_tracker .projName").text("ردیاب دوستان");
             $(".friend_tracker .projDesc").text("رفقای خود را از روی نقشه ردیابی نمایید.");
             $(".saam .projName").text("سام");
             $(".saam .projDesc").text("گرداور و ذخیره کننده اطلاعات بورس، ساخته شده بر مبنای متاتریدر 5");
 			$("body").css("font-family", "IRANYekan");
 			dict = {
-			    "Android Version": "نسخه اندروید",
-			    "Web Version": "نسخه وب",
+			    "Google Play": "گوگل پلی",
+			    "Website": "وبسایت",
 			    "Android Source": "سورس اندروید",
 			    "Flutter Source": "سورس فلاتر",
 			    "Software Source": "سورس نرم افزار",
 			    "Web Template": "قالب وب",
 			    "Server Source": "سورس سرور",
-			    "Android Browser Source": "سورس مرورگر اندروید",
 			    "Privacy Policy": "سیاست حریم خصوصی",
 			};
             break;
