@@ -79,6 +79,16 @@ data = {
                     "title": ""
                 },
                 {
+                    "name": "Myket",
+                    "link": "https://myket.ir/app/ir.mahdiparastesh.instatools",
+                    "title": "Iranian Android Myket Store"
+                },
+                {
+                    "name": "Bazaar",
+                    "link": "https://cafebazaar.ir/app/ir.mahdiparastesh.instatools",
+                    "title": "Iranian Android Bazaar Store"
+                },
+                {
                     "name": "Privacy Policy",
                     "link": "https://mahdiparastesh.ir/welcome/privacy/instatools.html",
                     "title": ""
@@ -133,6 +143,16 @@ data = {
                     "name": "Website",
                     "link": "https://migratio.mahdiparastesh.ir/",
                     "title": ""
+                },
+                {
+                    "name": "Myket",
+                    "link": "https://myket.ir/app/ir.mahdiparastesh.migratio",
+                    "title": "Iranian Android Myket Store"
+                },
+                {
+                    "name": "Bazaar",
+                    "link": "https://cafebazaar.ir/app/ir.mahdiparastesh.migratio",
+                    "title": "Iranian Android Bazaar Store"
                 },
                 {
                     "name": "Web Template",

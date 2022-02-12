@@ -47,14 +47,23 @@ function translate(hl) {
 			    "Software Source": "سورس نرم افزار",
 			    "Web Template": "قالب وب",
 			    "Server Source": "سورس سرور",
+			    "Myket": "مایکت",
+			    "Bazaar": "بازار",
 			    "Privacy Policy": "سیاست حریم خصوصی",
+				
+				"Iranian Android Myket Store": "استور ایرانی اندرویدی مایکت",
+				"Iranian Android Bazaar Store": "استور ایرانی اندرویدی بازار",
+				"Wordpress Theme": "تم وردپرس",
 			};
             break;
 		default:
 		    document.location.assign(document.location + "?hl=en");
 			break;
     }
-    if (dict) $(".anchor a").each(function() { $(this).text(dict[$(this).text()]); });
+    if (dict) $(".anchor a").each(function() {
+		$(this).text(dict[$(this).text()]);
+		$(this).attr("data-bs-original-title", dict[$(this).attr("data-bs-original-title")]);
+	});
 	if (["fa", "ar"].includes(hl))
 	    $("blockquote, .projDesc").css("direction", "rtl");
 	$('.grid').masonry();
