@@ -96,40 +96,6 @@ data = {
             ]
         },
         {
-            "id": "mergen",
-            "name": "Mergen",
-            "desc": "A logical Artificial Intelligence software, an operating system for a robot.",
-            "anchors": [
-                {
-                    "name": "Server Source",
-                    "link": "https://github.com/fulcrum1378/mergen",
-                    "title": ""
-                },
-                {
-                    "name": "Android Source",
-                    "link": "https://github.com/fulcrum1378/mergen_android",
-                    "title": ""
-                },
-            ]
-        },
-        {
-            "id": "telexporter",
-            "name": "Telexporter",
-            "desc": "Export your messages and call history to HTML, PDF or JSON files.",
-            "anchors": [
-                {
-                    "name": "Android Source",
-                    "link": "https://github.com/fulcrum1378/telexporter",
-                    "title": ""
-                },
-                {
-                    "name": "Privacy Policy",
-                    "link": "https://mahdiparastesh.ir/welcome/privacy/telexporter.html",
-                    "title": ""
-                },
-            ]
-        },
-        {
             "id": "migratio",
             "name": "Migratio",
             "desc": "A geographical statistical tool for determining someone's best destination for migration.",
@@ -162,6 +128,35 @@ data = {
                 {
                     "name": "Privacy Policy",
                     "link": "https://mahdiparastesh.ir/welcome/privacy/migratio.html",
+                    "title": ""
+                },
+            ]
+        },
+        {
+            "id": "mergen",
+            "name": "Mergen",
+            "desc": "A logical Artificial Intelligence software, an operating system for a robot.",
+            "anchors": [
+                {
+                    "name": "Server Source",
+                    "link": "https://github.com/fulcrum1378/mergen",
+                    "title": ""
+                },
+                {
+                    "name": "Android Source",
+                    "link": "https://github.com/fulcrum1378/mergen_android",
+                    "title": ""
+                },
+            ]
+        },
+        {
+            "id": "telexporter",
+            "name": "Telexporter",
+            "desc": "Export your messages and call history to HTML, PDF or JSON files.",
+            "anchors": [
+                {
+                    "name": "Privacy Policy",
+                    "link": "https://mahdiparastesh.ir/welcome/privacy/telexporter.html",
                     "title": ""
                 },
             ]
@@ -204,19 +199,6 @@ data = {
         },
     ],
 }
-#if country != "IR":
-#    data["projects"].append({
-#        "id": "sexbook",
-#        "name": "Sexbook",
-#        "desc": "Control your sexual life easily.",
-#        "anchors": [
-#            {
-#                "name": "Android - Source",
-#                "link": "https://github.com/fulcrum1378/sexbook",
-#                "title": ""
-#            },
-#        ]
-#    })
 print(temp["temp.html"](**data))
 
 # HTML Notes:
