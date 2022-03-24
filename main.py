@@ -71,7 +71,7 @@ data = {
         {
             "id": "instatools",
             "name": "InstaTools",
-            "desc": "Find unfollowers, download all saved posts, download any post and export DMs into PDF and HTML.",
+            "desc": "Find unfollowers, download all saved posts, download any post and export DMs into HTML, PDF and TXT.",
             "anchors": [
                 {
                     "name": "Google Play",
@@ -167,8 +167,13 @@ data = {
             "desc": "An application of the Hedonist philosophy!",
             "anchors": [
                 {
-                    "name": "Flutter Source",
+                    "name": "Android Source",
                     "link": "https://github.com/fulcrum1378/fortuna",
+                    "title": ""
+                },
+                {
+                    "name": "Flutter Source",
+                    "link": "https://github.com/fulcrum1378/fortuna_flutter",
                     "title": ""
                 },
             ]
