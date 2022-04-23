@@ -10,7 +10,7 @@ try:
                            ).json()["country_code"]
 except:
     country = ""
-got = {"hl": ""}
+got = {"hl": "", "fk": "0"}
 try:
     for g in cgi.FieldStorage().list: got[g.name] = g.value
 except:
@@ -75,13 +75,13 @@ data = {
             "anchors": [
                 {
                     "name": "Google Play",
-                    "link": "https://play.google.com/store/apps/details?id=ir.mahdiparastesh.instatools",
+                    "link": "https://play.google.com/store/apps/details?id=ir.mahdiparastesh.instatools.beth",
                     "title": ""
                 },
                 {
-                    "name": "Myket",
-                    "link": "https://myket.ir/app/ir.mahdiparastesh.instatools",
-                    "title": "Iranian Android Myket Store"
+                    "name": "Galaxy Store",
+                    "link": "https://galaxystore.samsung.com/detail/ir.mahdiparastesh.instatools.beth",
+                    "title": ""
                 },
                 {
                     "name": "Bazaar",
@@ -89,8 +89,40 @@ data = {
                     "title": "Iranian Android Bazaar Store"
                 },
                 {
+                    "name": "Myket",
+                    "link": "https://myket.ir/app/ir.mahdiparastesh.instatools",
+                    "title": "Iranian Android Myket Store"
+                },
+                {
                     "name": "Privacy Policy",
                     "link": "https://mahdiparastesh.ir/welcome/privacy/instatools.html",
+                    "title": ""
+                },
+            ]
+        },
+        {
+            "id": "telexporter",
+            "name": "Telexporter",
+            "desc": "Export your messages and call history to HTML, PDF or JSON files.",
+            "anchors": [
+                {
+                    "name": "Galaxy Store",
+                    "link": "https://galaxystore.samsung.com/detail/ir.mahdiparastesh.telexporter",
+                    "title": ""
+                },
+                {
+                    "name": "Bazaar",
+                    "link": "https://cafebazaar.ir/app/ir.mahdiparastesh.telexporter",
+                    "title": "Iranian Android Bazaar Store"
+                },
+                {
+                    "name": "Myket",
+                    "link": "https://myket.ir/app/ir.mahdiparastesh.telexporter",
+                    "title": "Iranian Android Myket Store"
+                },
+                {
+                    "name": "Privacy Policy",
+                    "link": "https://mahdiparastesh.ir/welcome/privacy/telexporter.html",
                     "title": ""
                 },
             ]
@@ -111,14 +143,14 @@ data = {
                     "title": ""
                 },
                 {
-                    "name": "Myket",
-                    "link": "https://myket.ir/app/ir.mahdiparastesh.migratio",
-                    "title": "Iranian Android Myket Store"
-                },
-                {
                     "name": "Bazaar",
                     "link": "https://cafebazaar.ir/app/ir.mahdiparastesh.migratio",
                     "title": "Iranian Android Bazaar Store"
+                },
+                {
+                    "name": "Myket",
+                    "link": "https://myket.ir/app/ir.mahdiparastesh.migratio",
+                    "title": "Iranian Android Myket Store"
                 },
                 {
                     "name": "Web Template",
@@ -133,41 +165,17 @@ data = {
             ]
         },
         {
-            "id": "mergen",
-            "name": "Mergen",
-            "desc": "A logical Artificial Intelligence software, an operating system for a robot.",
-            "anchors": [
-                {
-                    "name": "Server Source",
-                    "link": "https://github.com/fulcrum1378/mergen",
-                    "title": ""
-                },
-                {
-                    "name": "Android Source",
-                    "link": "https://github.com/fulcrum1378/mergen_android",
-                    "title": ""
-                },
-            ]
-        },
-        {
-            "id": "telexporter",
-            "name": "Telexporter",
-            "desc": "Export your messages and call history to HTML, PDF or JSON files.",
-            "anchors": [
-                {
-                    "name": "Privacy Policy",
-                    "link": "https://mahdiparastesh.ir/welcome/privacy/telexporter.html",
-                    "title": ""
-                },
-            ]
-        },
-        {
             "id": "fortuna",
             "name": "Fortuna",
-            "desc": "An application of the Hedonist philosophy!",
+            "desc": "An experimental application of the Hedonist philosophy!",
             "anchors": [
                 {
-                    "name": "Android Source",
+                    "name": "Download for Android",
+                    "link": "https://github.com/fulcrum1378/fortuna/raw/master/app/release/app-release.apk",
+                    "title": ""
+                },
+                {
+                    "name": "Android Source (Kotlin)",
                     "link": "https://github.com/fulcrum1378/fortuna",
                     "title": ""
                 },
@@ -179,12 +187,29 @@ data = {
             ]
         },
         {
-            "id": "friend_tracker",
-            "name": "Friend Tracker",
-            "desc": "Easily track your friends on the map.",
+            "id": "mergen",
+            "name": "Mergen",
+            "desc": "A logical Artificial Intelligence software, an operating system for a robot. (archived project)",
             "anchors": [
                 {
-                    "name": "Android Source",
+                    "name": "Server Source (Python)",
+                    "link": "https://github.com/fulcrum1378/mergen",
+                    "title": ""
+                },
+                {
+                    "name": "Android Source (Kotlin)",
+                    "link": "https://github.com/fulcrum1378/mergen_android",
+                    "title": ""
+                },
+            ]
+        },
+        {
+            "id": "friend_tracker",
+            "name": "Friend Tracker",
+            "desc": "Easily track your friends on the map. (archived project)",
+            "anchors": [
+                {
+                    "name": "Android Source (Java)",
                     "link": "https://github.com/fulcrum1378/friend_tracker",
                     "title": ""
                 },
@@ -193,10 +218,10 @@ data = {
         {
             "id": "saam",
             "name": "Saam",
-            "desc": "Stock market data collector based on MetaTrader5",
+            "desc": "Stock market data collector based on MetaTrader5 (archived project)",
             "anchors": [
                 {
-                    "name": "Software Source",
+                    "name": "Software Source (Python)",
                     "link": "https://github.com/fulcrum1378/saam",
                     "title": ""
                 },
@@ -204,6 +229,29 @@ data = {
         },
     ],
 }
+if got["fk"] == "1":
+    data["projects"].append({
+        "id": "sexbook",
+        "name": "Sexbook",
+        "desc": "With this app, you can record any kind of sexual activities you had in the past and view their statistics, frequency, recency, etc.",
+        "anchors": [
+            {
+                "name": "Google Play",
+                "link": "https://play.google.com/store/apps/details?id=ir.mahdiparastesh.sexbook",
+                "title": ""
+            },
+            {
+                "name": "Galaxy Store",
+                "link": "https://galaxystore.samsung.com/detail/ir.mahdiparastesh.sexbook",
+                "title": ""
+            },
+            {
+                "name": "Privacy Policy",
+                "link": "https://mahdiparastesh.ir/welcome/privacy/sexbook.html",
+                "title": ""
+            },
+        ]
+    })
 print(temp["temp.html"](**data))
 
 # HTML Notes:
