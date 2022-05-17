@@ -61,11 +61,11 @@ data = {
             "link": "https://www.instagram.com/fulcrum1378/",
             "title": "Mahdi Parastesh (@fulcrum1378) • Instagram photos and videos",
         },
-        {
-            "icon": "linktree",
-            "link": "https://linktr.ee/fulcrum1378",
-            "title": "Mahdi Parastesh | Linktree",
-        },
+        #{
+        #    "icon": "linktree",
+        #    "link": "https://linktr.ee/fulcrum1378",
+        #    "title": "Mahdi Parastesh | Linktree",
+        #},
     ],
     "projects": [
         {
@@ -103,7 +103,7 @@ data = {
         {
             "id": "telexporter",
             "name": "Telexporter",
-            "desc": "Export your messages and call history to HTML, PDF or JSON files.",
+            "desc": "Export your messages and call history to HTML, PDF or TXT files.",
             "anchors": [
                 {
                     "name": "Galaxy Store",
@@ -135,6 +135,11 @@ data = {
                 {
                     "name": "Google Play",
                     "link": "https://play.google.com/store/apps/details?id=ir.mahdiparastesh.migratio",
+                    "title": ""
+                },
+                {
+                    "name": "Galaxy Store",
+                    "link": "https://galaxystore.samsung.com/detail/ir.mahdiparastesh.migratio",
                     "title": ""
                 },
                 {
@@ -172,6 +177,11 @@ data = {
                 {
                     "name": "Download for Android",
                     "link": "https://github.com/fulcrum1378/fortuna/raw/master/app/release/app-release.apk",
+                    "title": ""
+                },
+                {
+                    "name": "Website",
+                    "link": "https://fortuna.mahdiparastesh.ir/",
                     "title": ""
                 },
                 {

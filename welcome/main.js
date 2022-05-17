@@ -27,7 +27,7 @@ function translate(hl) {
             $(".instatools .projName").text("اینستاتولز");
             $(".instatools .projDesc").text("آنفالویاب، دانلود هر گونه پست و استوری از اینستاگرام، دانلود پست های سیو شده و استخراج دایرکت ها در HTML ،PDF  و TXT.");
             $(".telexporter .projName").text("تلکسپورتر");
-            $(".telexporter .projDesc").text("اس ام اس ها و تاریخچه تماس های خود را در قالب های وب، پی دی اف و جیسون استخراج کنید.");
+            $(".telexporter .projDesc").text("اس ام اس ها و تاریخچه تماس های خود را در قالب های وب، پی دی اف و تکست استخراج کنید.");
             $(".migratio .projName").text("میگراتیو");
             $(".migratio .projDesc").text("یک ابزار جغرافی-آماری برای تعیین کردن بهترین مقصد مهاجرت افراد مختلف.");
 			$(".mergen .projName").text("مِرگِن");
