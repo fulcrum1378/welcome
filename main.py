@@ -76,29 +76,37 @@ data = {
                 {
                     "name": "Google Play",
                     "link": "https://play.google.com/store/apps/details?id=ir.mahdiparastesh.instatools.beth",
-                    "title": ""
+                    "title": "",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Galaxy Store",
                     "link": "https://galaxystore.samsung.com/detail/ir.mahdiparastesh.instatools.beth",
-                    "title": ""
+                    "title": "",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Bazaar",
                     "link": "https://cafebazaar.ir/app/ir.mahdiparastesh.instatools",
-                    "title": "Iranian Android Bazaar Store"
+                    "title": "Iranian Android Bazaar Store",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Myket",
                     "link": "https://myket.ir/app/ir.mahdiparastesh.instatools",
-                    "title": "Iranian Android Myket Store"
+                    "title": "Iranian Android Myket Store",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Privacy Policy",
                     "link": "https://mahdiparastesh.ir/welcome/privacy/instatools.html",
-                    "title": ""
+                    "title": "",
+                    "microType": "publishingPrinciples",
                 },
-            ]
+            ],
+            "microType": "MobileApplication",
+            "os": "Android",
+            "category": "Tools, Personalisation",
         },
         {
             "id": "telexporter",
@@ -108,24 +116,31 @@ data = {
                 {
                     "name": "Galaxy Store",
                     "link": "https://galaxystore.samsung.com/detail/ir.mahdiparastesh.telexporter",
-                    "title": ""
+                    "title": "",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Bazaar",
                     "link": "https://cafebazaar.ir/app/ir.mahdiparastesh.telexporter",
-                    "title": "Iranian Android Bazaar Store"
+                    "title": "Iranian Android Bazaar Store",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Myket",
                     "link": "https://myket.ir/app/ir.mahdiparastesh.telexporter",
-                    "title": "Iranian Android Myket Store"
+                    "title": "Iranian Android Myket Store",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Privacy Policy",
                     "link": "https://mahdiparastesh.ir/welcome/privacy/telexporter.html",
-                    "title": ""
+                    "title": "",
+                    "microType": "publishingPrinciples",
                 },
-            ]
+            ],
+            "microType": "MobileApplication",
+            "os": "Android",
+            "category": "Tools",
         },
         {
             "id": "migratio",
@@ -135,39 +150,49 @@ data = {
                 {
                     "name": "Google Play",
                     "link": "https://play.google.com/store/apps/details?id=ir.mahdiparastesh.migratio",
-                    "title": ""
+                    "title": "",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Galaxy Store",
                     "link": "https://galaxystore.samsung.com/detail/ir.mahdiparastesh.migratio",
-                    "title": ""
+                    "title": "",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Website",
                     "link": "https://migratio.mahdiparastesh.ir/",
-                    "title": ""
+                    "title": "",
+                    "microType": "sameAs",
                 },
                 {
                     "name": "Bazaar",
                     "link": "https://cafebazaar.ir/app/ir.mahdiparastesh.migratio",
-                    "title": "Iranian Android Bazaar Store"
+                    "title": "Iranian Android Bazaar Store",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Myket",
                     "link": "https://myket.ir/app/ir.mahdiparastesh.migratio",
-                    "title": "Iranian Android Myket Store"
+                    "title": "Iranian Android Myket Store",
+                    "microType": "installUrl",
                 },
                 {
                     "name": "Web Template",
                     "link": "https://github.com/fulcrum1378/migratio",
-                    "title": "Wordpress Theme"
+                    "title": "Wordpress Theme",
+                    "microType": "url",
                 },
                 {
                     "name": "Privacy Policy",
                     "link": "https://mahdiparastesh.ir/welcome/privacy/migratio.html",
-                    "title": ""
+                    "title": "",
+                    "microType": "publishingPrinciples",
                 },
-            ]
+            ],
+            "microType": "SoftwareApplication",
+            "os": "Android, Web",
+            "category": "Tools, Travel, Migration",
         },
         {
             "id": "fortuna",
@@ -177,24 +202,31 @@ data = {
                 {
                     "name": "Download for Android",
                     "link": "https://github.com/fulcrum1378/fortuna/raw/master/app/release/app-release.apk",
-                    "title": ""
+                    "title": "",
+                    "microType": "downloadUrl",
                 },
                 {
                     "name": "Website",
                     "link": "https://fortuna.mahdiparastesh.ir/",
-                    "title": ""
+                    "title": "",
+                    "microType": "sameAs",
                 },
                 {
                     "name": "Android Source (Kotlin)",
                     "link": "https://github.com/fulcrum1378/fortuna",
-                    "title": ""
+                    "title": "",
+                    "microType": "url",
                 },
                 {
                     "name": "Flutter Source",
                     "link": "https://github.com/fulcrum1378/fortuna_flutter",
-                    "title": ""
+                    "title": "",
+                    "microType": "url",
                 },
-            ]
+            ],
+            "microType": "SoftwareApplication",
+            "os": "Android, Web, iOS",
+            "category": "Philosophy, Lifestyle, Events, Health",
         },
         {
             "id": "mergen",
@@ -204,14 +236,19 @@ data = {
                 {
                     "name": "Server Source (Python)",
                     "link": "https://github.com/fulcrum1378/mergen",
-                    "title": ""
+                    "title": "",
+                    "microType": "sameAs",
                 },
                 {
                     "name": "Android Source (Kotlin)",
                     "link": "https://github.com/fulcrum1378/mergen_android",
-                    "title": ""
+                    "title": "",
+                    "microType": "url",
                 },
-            ]
+            ],
+            "microType": "SoftwareApplication",
+            "os": "Android, Windows, Linux, macOS",
+            "category": "Artificial Intelligence, AI, Logic",
         },
         {
             "id": "friend_tracker",
@@ -221,9 +258,13 @@ data = {
                 {
                     "name": "Android Source (Java)",
                     "link": "https://github.com/fulcrum1378/friend_tracker",
-                    "title": ""
+                    "title": "",
+                    "microType": "sameAs",
                 },
-            ]
+            ],
+            "microType": "MobileApplication",
+            "os": "Android",
+            "category": "Maps & Navigation, Communication, Social",
         },
         {
             "id": "saam",
@@ -233,9 +274,13 @@ data = {
                 {
                     "name": "Software Source (Python)",
                     "link": "https://github.com/fulcrum1378/saam",
-                    "title": ""
+                    "title": "",
+                    "microType": "sameAs",
                 },
-            ]
+            ],
+            "microType": "SoftwareApplication",
+            "os": "Windows",
+            "category": "Finance, Business, Tools",
         },
     ],
 }
@@ -248,19 +293,25 @@ if got["fk"] == "1":
             {
                 "name": "Google Play",
                 "link": "https://play.google.com/store/apps/details?id=ir.mahdiparastesh.sexbook",
-                "title": ""
+                "title": "",
+                "microType": "installUrl",
             },
             {
                 "name": "Galaxy Store",
                 "link": "https://galaxystore.samsung.com/detail/ir.mahdiparastesh.sexbook",
-                "title": ""
+                "title": "",
+                "microType": "installUrl",
             },
             {
                 "name": "Privacy Policy",
                 "link": "https://mahdiparastesh.ir/welcome/privacy/sexbook.html",
-                "title": ""
+                "title": "",
+                "microType": "publishingPrinciples",
             },
-        ]
+        ],
+        "microType": "MobileApplication",
+        "os": "Android",
+        "category": "Lifestyle, Events, Dating",
     })
 print(temp["temp.html"](**data))
 
