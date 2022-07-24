@@ -16,7 +16,7 @@ try:
 except:
     pass
 temp = PageTemplateLoader(os.path.join(os.path.dirname(__file__), folder), encoding="utf-8")
-# Chameleon doesn't support Persian characters!
+# Chameleon supports neither Persian nor Cyrillic characters!
 print("Content-Type: text/html\n")
 data = {
     "root": "/" + folder + "/",
@@ -61,11 +61,11 @@ data = {
             "link": "https://www.instagram.com/fulcrum1378/",
             "title": "Mahdi Parastesh (@fulcrum1378) • Instagram photos and videos",
         },
-        #{
-        #    "icon": "linktree",
-        #    "link": "https://linktr.ee/fulcrum1378",
-        #    "title": "Mahdi Parastesh | Linktree",
-        #},
+        {
+            "icon": "linktree",
+            "link": "https://linktr.ee/fulcrum1378",
+            "title": "Mahdi Parastesh | Linktree",
+        },
     ],
     "projects": [
         {
@@ -86,6 +86,12 @@ data = {
                     "microType": "installUrl",
                 },
                 {
+                    "name": "NashStore",
+                    "link": "https://store.nashstore.ru/store/6295e2d7fb3ed3bb471ff674",
+                    "title": "Russian App Store",
+                    "microType": "installUrl",
+                },
+                {
                     "name": "Bazaar",
                     "link": "https://cafebazaar.ir/app/ir.mahdiparastesh.instatools",
                     "title": "Iranian Android Bazaar Store",
@@ -95,6 +101,12 @@ data = {
                     "name": "Myket",
                     "link": "https://myket.ir/app/ir.mahdiparastesh.instatools",
                     "title": "Iranian Android Myket Store",
+                    "microType": "installUrl",
+                },
+                {
+                    "name": "APKPure",
+                    "link": "https://apkpure.com/p/ir.mahdiparastesh.instatools.beth",
+                    "title": "APKPure.com a third-party APK store",
                     "microType": "installUrl",
                 },
                 {
@@ -197,16 +209,22 @@ data = {
         {
             "id": "fortuna",
             "name": "Fortuna",
-            "desc": "An experimental application of the Hedonist philosophy!",
+            "desc": "An application of the Hedonist philosophy!",
             "anchors": [
                 {
-                    "name": "Download for Android",
-                    "link": "https://github.com/fulcrum1378/fortuna/raw/master/app/release/app-release.apk",
+                    "name": "Download for Android (Gregorian calendar)",
+                    "link": "https://github.com/fulcrum1378/fortuna/raw/master/app/gregorian/release/app-gregorian-release.apk",
                     "title": "",
                     "microType": "downloadUrl",
                 },
                 {
-                    "name": "Website",
+                    "name": "Download for Android (Persian calendar)",
+                    "link": "https://github.com/fulcrum1378/fortuna/raw/master/app/persian/release/app-persian-release.apk",
+                    "title": "",
+                    "microType": "downloadUrl",
+                },
+                {
+                    "name": "Website (Demo)",
                     "link": "https://fortuna.mahdiparastesh.ir/",
                     "title": "",
                     "microType": "sameAs",
@@ -300,6 +318,18 @@ if got["fk"] == "1":
                 "name": "Galaxy Store",
                 "link": "https://galaxystore.samsung.com/detail/ir.mahdiparastesh.sexbook",
                 "title": "",
+                "microType": "installUrl",
+            },
+            #{
+            #    "name": "NashStore",
+            #    "link": "<TODO>",
+            #    "title": "<TODO>",
+            #    "microType": "installUrl",
+            #},
+            {
+                "name": "APKPure",
+                "link": "https://apkpure.com/p/ir.mahdiparastesh.sexbook",
+                "title": "APKPure.com a third-party APK store",
                 "microType": "installUrl",
             },
             {

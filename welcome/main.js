@@ -33,30 +33,35 @@ function translate(hl) {
 			$(".mergen .projName").text("مِرگِن");
             $(".mergen .projDesc").text("یک نرم افزار هوش مصنوعی منطقی، سیستم عاملی برای یک ربات (پروژه آرشیو شده)");
             $(".fortuna .projName").text("فورتونا");
-            $(".fortuna .projDesc").text("نرم افزاری آزمایشی بر مبنای فلسفه «هدونیسم»");
+            $(".fortuna .projDesc").text("نرم افزاری بر مبنای فلسفه «هدونیسم»");
             $(".friend_tracker .projName").text("ردیاب دوستان");
             $(".friend_tracker .projDesc").text("دوستان خود را از روی نقشه ردیابی کنید. (پروژه آرشیو شده)");
             $(".saam .projName").text("سام");
             $(".saam .projDesc").text("گرداور و ذخیره کننده اطلاعات بورس، ساخته شده بر مبنای متاتریدر ۵ (پروژه آرشیو شده)");
             $(".sexbook .projName").text("سکسبوک");
-            $(".sexbook .projDesc").text("زندگی جنسی خود را به آسانی کنترل کنید.");
+            $(".sexbook .projDesc").text("زندگی جنسی خود را ثبت کرده و آمارگیری و کنترل کنید.");
 			$("body").css("font-family", "IRANYekan");
 			dict = {
 			    "Google Play": "گوگل پلی",
 			    "Galaxy Store": "گلکسی استور",
 			    "Website": "وبسایت",
+			    "Website (Demo)": "وبسایت (دمو)",
 			    "Android Source (Kotlin)": "سورس اندروید (کاتلین)",
 			    "Android Source (Java)": "سورس اندروید (جاوا)",
 			    "Flutter Source": "سورس فلاتر",
 			    "Software Source (Python)": "سورس نرم افزار (پایتون)",
 			    "Web Template": "قالب وب",
 			    "Server Source (Python)": "سورس سرور (پایتون)",
+			    "NashStore": "ناشستور",
 			    "Myket": "مایکت",
 			    "Bazaar": "بازار",
 			    "Privacy Policy": "سیاست حریم خصوصی",
-				"Download for Android": "دانلود برای اندروید",
-				"Iranian Android Myket Store": "استور ایرانی اندرویدی مایکت",
-				"Iranian Android Bazaar Store": "استور ایرانی اندرویدی بازار",
+				"Russian App Store": "فروشگاه اپلیکیشن روسی ناشستور",
+				"Iranian Android Myket Store": "فروشگاه اپلیکیشن ایرانی مایکت",
+				"Iranian Android Bazaar Store": "فروشگاه اپلیکیشن ایرانی بازار",
+				"APKPure.com a third-party APK store": "یک وبسایت معروف دانلود اپ اندروید",
+				"Download for Android (Gregorian calendar)": "دانلود برای اندروید (تقویم میلادی)",
+				"Download for Android (Persian calendar)": "دانلود برای اندروید (تقویم شمسی)",
 				"Wordpress Theme": "تم وردپرس",
 			};
             break;
