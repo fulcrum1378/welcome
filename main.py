@@ -69,7 +69,25 @@ data = {
     ],
     "projects": [
         {
+            "id": "mergen4",
+            "icon": "mergen",
+            "name": "Mergen IV",
+            "desc": "A logical multi-sensed artificially intelligent robot (AIR) software. Temporarily designed for Android.",
+            "anchors": [
+                {
+                    "name": "Android Source",
+                    "link": "https://github.com/fulcrum1378/mergen_android",
+                    "title": "",
+                    "microType": "sameAs",
+                },
+            ],
+            "microType": "SoftwareApplication",
+            "os": "Android",
+            "category": "AI, Logic, Robot",
+        },
+        {
             "id": "instatools",
+            "icon": "instatools",
             "name": "InstaTools",
             "desc": "Find unfollowers, download all saved posts, download any post and export DMs into HTML, PDF and TXT.",
             "anchors": [
@@ -122,6 +140,7 @@ data = {
         },
         {
             "id": "telexporter",
+            "icon": "telexporter",
             "name": "Telexporter",
             "desc": "Export your messages and call history to HTML, PDF or TXT files.",
             "anchors": [
@@ -156,6 +175,7 @@ data = {
         },
         {
             "id": "migratio",
+            "icon": "migratio",
             "name": "Migratio",
             "desc": "A geographical statistical tool for determining someone's best destination for migration.",
             "anchors": [
@@ -208,6 +228,7 @@ data = {
         },
         {
             "id": "fortuna",
+            "icon": "fortuna",
             "name": "Fortuna",
             "desc": "An application of the Hedonist philosophy!",
             "anchors": [
@@ -247,29 +268,71 @@ data = {
             "category": "Philosophy, Lifestyle, Events, Health",
         },
         {
-            "id": "mergen",
-            "name": "Mergen",
-            "desc": "A logical Artificial Intelligence software, an operating system for a robot. (archived project)",
+            "id": "mergen3",
+            "icon": "mergen",
+            "name": "Mergen III",
+            "desc": "A multi-sensed artificially intelligent robot (AIR) software, which needed a server and (a) client(s). It was replaced by one which didn't need server and client. (archived project)",
             "anchors": [
                 {
                     "name": "Server Source (Python)",
-                    "link": "https://github.com/fulcrum1378/mergen",
+                    "link": "https://github.com/fulcrum1378/mergen_server",
                     "title": "",
                     "microType": "sameAs",
                 },
                 {
                     "name": "Android Source (Kotlin)",
-                    "link": "https://github.com/fulcrum1378/mergen_android",
+                    "link": "https://github.com/fulcrum1378/mergen_client",
                     "title": "",
                     "microType": "url",
                 },
             ],
             "microType": "SoftwareApplication",
             "os": "Android, Windows, Linux, macOS",
-            "category": "Artificial Intelligence, AI, Logic",
+            "category": "Artificial Intelligence, AI, Logic, NLP",
+        },
+        {
+            "id": "mergen2",
+            "icon": "mergen",
+            "name": "Mergen II (Pronouncer)",
+            "desc": "An auditory (talking and hearing) NLP software robot. It was replaced by a auditory-visual software AI robot. (archived project)",
+            "anchors": [
+                {
+                    "name": "Server Source (Python)",
+                    "link": "https://github.com/fulcrum1378/pronouncer",
+                    "title": "",
+                    "microType": "sameAs",
+                },
+                {
+                    "name": "Android Source (Kotlin)",
+                    "link": "https://github.com/fulcrum1378/mergen_client",
+                    "title": "",
+                    "microType": "url",
+                },
+            ],
+            "microType": "SoftwareApplication",
+            "os": "Android, Windows, Linux, macOS",
+            "category": "Artificial Intelligence, AI, Logic, NLP",
+        },
+        {
+            "id": "mergen1",
+            "icon": "mergen",
+            "name": "Mergen I",
+            "desc": "An NLP logical artificial intelligence software, aimed to think using pure digital text. It was replaced by an auditory one. (archived project)",
+            "anchors": [
+                {
+                    "name": "Software Source (Python)",
+                    "link": "https://github.com/fulcrum1378/mergen_server",
+                    "title": "",
+                    "microType": "sameAs",
+                },
+            ],
+            "microType": "SoftwareApplication",
+            "os": "Android, Windows, Linux, macOS",
+            "category": "Artificial Intelligence, AI, Logic, NLP",
         },
         {
             "id": "friend_tracker",
+            "icon": "friend_tracker",
             "name": "Friend Tracker",
             "desc": "Easily track your friends on the map. (archived project)",
             "anchors": [
@@ -286,6 +349,7 @@ data = {
         },
         {
             "id": "saam",
+            "icon": "saam",
             "name": "Saam",
             "desc": "Stock market data collector based on MetaTrader5 (archived project)",
             "anchors": [
@@ -305,6 +369,7 @@ data = {
 if got["fk"] == "1":
     data["projects"].append({
         "id": "sexbook",
+        "icon": "sexbook",
         "name": "Sexbook",
         "desc": "With this app, you can record any kind of sexual activities you had in the past and view their statistics, frequency, recency, etc.",
         "anchors": [
