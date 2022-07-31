@@ -292,7 +292,7 @@ data = {
         },
         {
             "id": "mergen2",
-            "icon": "mergen",
+            "icon": "mergen_red",
             "name": "Mergen II (Pronouncer)",
             "desc": "An auditory (talking and hearing) NLP software robot. It was replaced by a auditory-visual software AI robot. (archived project)",
             "anchors": [
