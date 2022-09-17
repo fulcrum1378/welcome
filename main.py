@@ -70,7 +70,7 @@ data = {
     "projects": [
         {
             "id": "mergen4",
-            "icon": "mergen",
+            "icon": "mergen_iv",
             "name": "Mergen IV",
             "desc": "A logical multi-sensed artificially intelligent robot (AIR) software. Temporarily designed for Android.",
             "anchors": [
